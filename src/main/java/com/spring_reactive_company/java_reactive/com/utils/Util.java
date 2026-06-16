@@ -1,5 +1,7 @@
 package com.spring_reactive_company.java_reactive.com.utils;
 
+import net.datafaker.Faker;
+
 import java.util.function.Consumer;
 
 public class Util {
@@ -21,5 +23,9 @@ public class Util {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static Faker faker() {
+        return new Faker();
     }
 }
