@@ -25,6 +25,17 @@ public class Util {
         }
     }
 
+    public static CustomSub subscriber() {
+        return new CustomSub();
+
+    }
+
+    public static CustomSub subscriber(String name) {
+        return new CustomSub(name);
+
+    }
+
+
     public static Faker faker() {
         return new Faker();
     }
