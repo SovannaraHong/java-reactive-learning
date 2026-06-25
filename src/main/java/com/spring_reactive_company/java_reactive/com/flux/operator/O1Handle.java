@@ -1,9 +1,9 @@
-package com.spring_reactive_company.java_reactive.com.flux.handle;
+package com.spring_reactive_company.java_reactive.com.flux.operator;
 
 import com.spring_reactive_company.java_reactive.com.utils.Util;
 import reactor.core.publisher.Flux;
 
-public class H1 {
+public class O1Handle {
     void main() {
 
 //        Flux.range(1, 10)
