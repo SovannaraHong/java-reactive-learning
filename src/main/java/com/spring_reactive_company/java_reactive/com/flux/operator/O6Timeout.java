@@ -34,7 +34,7 @@ public class O6Timeout {
                 //second para it fallback
                 .timeout(Duration.ofSeconds(3), getAge())// one parameter if timeout small than delay it close
                 .subscribe(Util.subscriber());
-        Util.delay(50);
+        Util.sleep(50);
 
     }
 }

@@ -19,10 +19,10 @@ public class H4AutoConnect {
                 .publish()
                 .autoConnect(1);
         flux.subscribe(Util.subscriber("Lin"));
-        Util.delay(10);
+        Util.sleep(10);
         System.out.println("Ra is  coming to watch");
         flux.subscribe(Util.subscriber("Ra"));
-        Util.delay(50);
+        Util.sleep(50);
 
 
     }

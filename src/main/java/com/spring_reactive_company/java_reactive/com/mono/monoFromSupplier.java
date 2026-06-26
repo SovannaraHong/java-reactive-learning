@@ -31,7 +31,7 @@ public class monoFromSupplier {
         return Mono.fromSupplier(() -> {
             System.out.println("GenerateName ..........");
             Faker faker = new Faker();
-            Util.delay(2);
+            Util.sleep(2);
             return faker.name().firstName();
         }).map(String::toUpperCase);
     }

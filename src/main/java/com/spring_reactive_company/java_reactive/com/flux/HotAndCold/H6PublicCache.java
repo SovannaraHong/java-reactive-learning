@@ -18,14 +18,14 @@ public class H6PublicCache {
                 .delayElements(Duration.ofSeconds(1))
                 .cache();
 
-        Util.delay(3);
+        Util.sleep(3);
         flux.subscribe(Util.subscriber("Dara"));
 
-        Util.delay(10);
+        Util.sleep(10);
         System.out.println("Thida is about to join...");
         flux.subscribe(Util.subscriber("Thida"));
 
-        Util.delay(60);
+        Util.sleep(60);
 
 
     }

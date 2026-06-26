@@ -19,14 +19,14 @@ public class H5AutoConnectNoSubscribe {
                 .publish()
                 .autoConnect(0);
 
-        Util.delay(3);
+        Util.sleep(3);
         flux.subscribe(Util.subscriber("Dara"));
 
-        Util.delay(4);
+        Util.sleep(4);
         System.out.println("Thida is about to join...");
         flux.subscribe(Util.subscriber("Thida"));
 
-        Util.delay(60);
+        Util.sleep(60);
 
 
     }

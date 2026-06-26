@@ -22,7 +22,7 @@ public class T2SubscribeOn {
                 .subscribeOn(Schedulers.boundedElastic())
                 .doFirst(() -> printThread("first1"))
                 .subscribe(x -> printThread("sub" + x));
-        Util.delay(50);
+        Util.sleep(50);
 //        Runnable r = () -> flux.subscribe(x -> printThread("subscribe" + x));
 //        for (int i = 0; i < 2; i++) {
 //            new Thread(r).start();
