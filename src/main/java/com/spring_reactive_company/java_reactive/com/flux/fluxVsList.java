@@ -18,7 +18,7 @@ public class fluxVsList {
     }
 
     private static String getCountry() {
-        Util.delay(1);
+        Util.sleep(1);
 
         return new Faker().country().name();
     }

@@ -11,7 +11,7 @@ public class O10FlatMap {
         userService.getUsers()
                 .flatMap(x -> orderService.getOrders(x.getId()))
                 .subscribe(Util.subscriber());
-        Util.delay(2);
+        Util.sleep(2);
     }
 
 }

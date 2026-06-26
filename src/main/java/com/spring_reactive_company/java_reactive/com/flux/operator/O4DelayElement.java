@@ -15,7 +15,7 @@ public class O4DelayElement {
 
                 .delayElements(Duration.ofSeconds(1))//delay of element
                 .subscribe(subscriber());
-        Util.delay(60);
+        Util.sleep(60);
 
 
     }

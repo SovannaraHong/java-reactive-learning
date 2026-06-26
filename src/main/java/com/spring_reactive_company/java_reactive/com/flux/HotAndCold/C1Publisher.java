@@ -17,9 +17,9 @@ public class C1Publisher {
         Flux<String> flux = Flux.fromStream(() -> getScene())
                 .delayElements(Duration.ofSeconds(2));
         flux.subscribe(Util.subscriber("Lin"));
-        Util.delay(5);
+        Util.sleep(5);
         flux.subscribe(Util.subscriber("Ra"));
-        Util.delay(50);
+        Util.sleep(50);
 
 
     }

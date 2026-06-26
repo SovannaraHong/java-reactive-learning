@@ -20,9 +20,9 @@ public class H2Publisher {
                 .refCount(1);// count subscribe and if it is having subscribe like 2 if it's have 2 sub it do
         // if input 2 it wait subscribe 2 it do
         flux.subscribe(Util.subscriber("Lin"));
-        Util.delay(5);
+        Util.sleep(5);
         flux.subscribe(Util.subscriber("Ra"));
-        Util.delay(50);
+        Util.sleep(50);
 
 
     }

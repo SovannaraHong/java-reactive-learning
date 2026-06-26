@@ -17,12 +17,17 @@ public class Util {
         return () -> System.out.println("complete");
     }
 
-    public static void delay(int seconds) {
+    public static void sleep(int seconds) {
+        sleepMili(seconds * 1000);
+    }
+
+    public static void sleepMili(int milis) {
         try {
-            Thread.sleep(seconds * 1000L);
+            Thread.sleep(milis);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     public static CustomSub subscriber() {

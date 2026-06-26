@@ -18,9 +18,9 @@ public class H1Share {
                 .delayElements(Duration.ofSeconds(2))
                 .share();
         flux.subscribe(Util.subscriber("Lin"));
-        Util.delay(5);
+        Util.sleep(5);
         flux.subscribe(Util.subscriber("Ra"));
-        Util.delay(50);
+        Util.sleep(50);
 
 
     }

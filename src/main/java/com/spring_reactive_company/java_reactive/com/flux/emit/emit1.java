@@ -33,7 +33,7 @@ public class emit1 {
         Flux.create(color).subscribe(System.out::println);
 
         for (int i = 0; i < 10; i++) {
-            Util.delay(2);
+            Util.sleep(2);
             ColorProduce.produce();
 
         }

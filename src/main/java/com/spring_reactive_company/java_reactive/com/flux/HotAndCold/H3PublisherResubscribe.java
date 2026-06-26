@@ -20,9 +20,9 @@ public class H3PublisherResubscribe {
                 .publish()
                 .refCount(1);
         flux.subscribe(Util.subscriber("Lin"));
-        Util.delay(10);
+        Util.sleep(10);
         flux.subscribe(Util.subscriber("Ra"));
-        Util.delay(50);
+        Util.sleep(50);
 
 
     }
