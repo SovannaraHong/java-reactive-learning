@@ -1,4 +1,4 @@
-package com.spring_reactive_company.java_reactive.com.CombinePublisher;
+package com.spring_reactive_company.java_reactive.com.flux.CombinePublisher;
 
 import com.spring_reactive_company.java_reactive.com.utils.Util;
 import reactor.core.publisher.Flux;
