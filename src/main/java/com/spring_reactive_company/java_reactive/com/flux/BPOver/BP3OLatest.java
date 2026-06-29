@@ -1,10 +1,10 @@
-package com.spring_reactive_company.java_reactive.com.BPOver;
+package com.spring_reactive_company.java_reactive.com.flux.BPOver;
 
 import com.spring_reactive_company.java_reactive.com.utils.Util;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
 
-public class BP2ODrop {
+public class BP3OLatest {
     //   Queues
     void main() {
         System.setProperty("reactor.bufferSize.small", "16");
@@ -19,7 +19,7 @@ public class BP2ODrop {
                     }
                     sink.complete();
                 })
-                .onBackpressureDrop()
+                .onBackpressureLatest()
                 .publishOn(Schedulers.boundedElastic())
 
                 .doOnNext(s -> Util.sleepMili(10))
