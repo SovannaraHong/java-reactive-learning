@@ -7,7 +7,7 @@ import reactor.core.publisher.Mono;
 import java.time.Duration;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class BCWindow {
+public class BC5GroupBy {
     static AtomicInteger counter = new AtomicInteger(1);
 
     private static Flux<String> fluxString() {
